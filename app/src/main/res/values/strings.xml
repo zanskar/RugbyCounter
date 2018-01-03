@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">CourtCounter</string>
+    <string name="app_name">Rugby Counter</string>
+    <string name="team_a_name">XV France</string>
+    <string name="team_b_name">New Zealand</string>
+    <string name="team_a_score">Team A Score</string>
+    <string name="team_b_score">Team B Score</string>
+    <string name="try_5">Try</string>
+    <string name="try_a">Try Button team A</string>
+    <string name="try_b">Try Button team B</string>
+    <string name="con_2">Conversion</string>
+    <string name="con_a">Conversion Button team A</string>
+    <string name="con_b">Conversion Button team B</string>
+    <string name="pen_drop_3">Penalty/Drop</string>
+    <string name="pen_drop_a">Penalty/Drop Button team A</string>
+    <string name="pen_drop_b">Penalty/Drop Button team B</string>
+    <string name="image_team_a">Flag France</string>
+    <string name="image_team_b">Flag New Zealand</string>
+    <string name="reset">Reset</string>
+    <string name="reset_b">Reset button</string>
+    <string name="zero">0</string>
 </resources>
