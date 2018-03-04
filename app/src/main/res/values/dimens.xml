@@ -4,8 +4,12 @@
     <dimen name="pad_6">6dp</dimen>
     <dimen name="pad_15">15dp</dimen>
     <dimen name="pad_bot">35dp</dimen>
+    <dimen name="pad_botl">15dp</dimen>
     <dimen name="pad_24">24dp</dimen>
     <dimen name="pad_25">25dp</dimen>
     <dimen name="pad_b">35dp</dimen>
     <dimen name="pad_s">60dp</dimen>
+    <dimen name="pad_sl">120dp</dimen>
+    <dimen name="pad_sco">10dp</dimen>
+    <dimen name="pad_rel">205dp</dimen>
 </resources>

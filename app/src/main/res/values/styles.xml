@@ -21,13 +21,13 @@
 
     <style name="but">
         <item name="android:textColor">#ffffff</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:background">#f40202</item>
     </style>
 
     <style name="reset">
         <item name="android:textColor">#ffffff</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:background">#0f1e80</item>
     </style>
 </resources>

@@ -1,9 +1,8 @@
 package com.example.android.courtcounter;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,17 +11,23 @@ public class MainActivity extends AppCompatActivity {
     int ScoreTeamA = 0;
     int ScoreTeamB = 0;
 
+    /**
+     * Mask the action bar
+     */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
     }
 
     /**
-     * Increase the score for Team A by 1 point.
+     * Increase the score for Team A by 5 points.
      */
-    public void addOneForTeamA(View v) {
-        ScoreTeamA = ScoreTeamA + 1;
+    public void addFiveForTeamA(View v) {
+        ScoreTeamA = ScoreTeamA + 5;
         displayForTeamA(ScoreTeamA);
     }
 
@@ -43,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team B by 1 point.
+     * Increase the score for Team B by 5 points.
      */
-    public void addOneForTeamB(View v) {
-        ScoreTeamB = ScoreTeamB + 1;
+    public void addFiveForTeamB(View v) {
+        ScoreTeamB = ScoreTeamB + 5;
         displayForTeamB(ScoreTeamB);
     }
 
@@ -73,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
+
     /**
      * Displays the given score for Team B.
      */
@@ -80,6 +86,24 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
+
+    /**
+     * Saves the score when turning the device upside down
+     */
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("ScoreTeamA", ScoreTeamA);
+        savedInstanceState.putInt("ScoreTeamB", ScoreTeamB);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        int ScoreTeamA = savedInstanceState.getInt("ScoreTeamA");
+        int ScoreTeamB = savedInstanceState.getInt("ScoreTeamB");
+    }
+
     /**
      * Resets the score for Team A and B.
      */
