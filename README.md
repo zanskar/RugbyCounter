@@ -9,7 +9,7 @@ I chose to build a rugby counter app, tracking the points obtained by French tea
 <ul>
   <li>Use of ScrollView</li>
   <li>Implement score buttons and reset button</li> 
-  <li>Complex layout implemented both on landcapse and portrait views with LinearLayout and RelativeLayout </li>
+  <li>Complex layout implemented both on landscape and portrait views with LinearLayout and RelativeLayout </li>
   <li>Image positioning</li>
   <li>Use dimens, strings, colors and style xml files</li>
 </ul>
