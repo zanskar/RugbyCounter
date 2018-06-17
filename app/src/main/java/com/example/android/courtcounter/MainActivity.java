@@ -3,6 +3,8 @@ package com.example.android.courtcounter;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -78,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
-
     /**
      * Displays the given score for Team B.
      */
@@ -86,24 +87,6 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
-
-    /**
-     * Saves the score when turning the device upside down
-     */
-    @Override
-    public void onSaveInstanceState(Bundle savedInstanceState) {
-        super.onSaveInstanceState(savedInstanceState);
-        savedInstanceState.putInt("ScoreTeamA", ScoreTeamA);
-        savedInstanceState.putInt("ScoreTeamB", ScoreTeamB);
-    }
-
-    @Override
-    public void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        int ScoreTeamA = savedInstanceState.getInt("ScoreTeamA");
-        int ScoreTeamB = savedInstanceState.getInt("ScoreTeamB");
-    }
-
     /**
      * Resets the score for Team A and B.
      */
