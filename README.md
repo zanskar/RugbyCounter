@@ -17,5 +17,5 @@ I chose to build a rugby counter app, tracking the points obtained by French tea
 ## Screenshots
 <img src="/images/Screenshot_1.png" width="320" height="640">
 
-<img src="/images/Screenshot_2.png" width="640" height="320">
+<img src="/images/Screenshot_2.jpg" width="640" height="320">
 
