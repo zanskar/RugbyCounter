@@ -1,7 +1,9 @@
 # Rugby Counter App
 
 ## Description
-This is the second project of the second phase of Google Developer Challenge Scholarship - Android Basics - 2017/2018, on order to obtain a nanodegree. The subject was to create a score keeper app, tracking points of two different players or teams. I chose to build a rugby counter app, tracking the points obtained by French team and New Zealand team, adding 5 points for a try, 2 points for a conversion and 3 points for a penalty / drop.
+This is the second project of the second phase of Google Developer Challenge Scholarship - Android Basics - 2017/2018, on order to obtain a nanodegree. The subject was to create a score keeper app, tracking points of two different players or teams.
+
+I chose to build a rugby counter app, tracking the points obtained by French team and New Zealand team, adding 5 points for a try, 2 points for a conversion and 3 points for a penalty / drop. The reset button, when pressed,  sets both scores at zero at the end of the match.
 
 ## Technical points
 <ul>
